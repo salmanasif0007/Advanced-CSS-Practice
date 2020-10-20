@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms</title>
+</head>
+<style>
+.simple{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(0, 255, 98);
+}
+.translate{
+    background-color: blueviolet;
+    color: white;
+    width: 300px;
+    height: 100px;
+    transform: translate(50px,20px); 
+}
+.rotate{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(0, 225, 255);
+    transform: rotate(20deg);
+}
+.rotate2{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 123, 0);
+    transform: rotate(-20deg);
+}
+.scale{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 0, 212);
+    transform: scale(2,1);
+}
+.scale2{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    transform: scale(0.5,0.5);
+}
+.scale3{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(30, 255, 0);
+    transform: scaleY(1);
+}
+.scale4{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(0, 247, 255);
+    transform: scaleX(0.5);
+}
+.skewX{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 208, 0);
+    transform: skewX(20deg);
+}
+.skewY{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 208, 0);
+    transform: skewY(20deg);
+}
+.skew{
+    width: 300px;
+    height: 100px;
+    background-color: rgba(200, 255, 0, 0.979);
+    transform: skew(20deg , 10deg);
+}
+.skew2{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(165, 140, 31);
+    transform: skew(20deg);
+}
+.matrix{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(38, 202, 125);
+    transform: matrix(1, -0.3, 0, 1, 0, 0); 
+}
+.matrix2{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(204, 27, 189);
+    transform: matrix(1, 0, 0.5, 1, 150, 0); 
+
+}
+</style>
+<body>
+    <h1 style="text-align: center">2D Transforms</h1>
+
+                    <!-- translate -->
+
+    <h1>translate()</h1>
+    <div class="translate">
+        This is translate()
+        50px width
+        20px height
+    </div>
+
+                    <!-- rotate -->
+
+    <h1>rotate(+ value)</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="rotate">
+        This is rotate()
+        20deg
+    </div>
+    <h1>rotate(- value)</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="rotate2">
+        This is rotate()
+        -20deg
+    </div>
+
+                    <!-- scale -->
+    <h1 style="padding-top: 30px;">scale(increases)</h1>
+    <div class="scale">
+        This is scale( 2,1)
+        width 2 
+        height 1
+    </div>
+
+    <h1>scale(decreases)</h1>
+    <div class="scale2">
+        This is scale( 0.5,0.5)
+        width 2 
+        height 1
+    </div>
+
+
+                        <!-- scale x,y -->
+
+    <h1 >scaleY(increases)</h1>
+    <div class="scale3">
+        This is scaleY( 1)
+       
+    </div>
+
+    <h1>scaleX(decreases)</h1>
+    <div class="scale4">
+        This is scaleX(0.5)
+    </div>
+
+                        <!-- skew -->
+
+    <h1>skewX()</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="skewX">
+        This div element is skewed 20 degrees along the X-axis
+    </div>
+
+    <h1>skewY()</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="skewY">
+        This div element is skewed 20 degrees along the Y-axis
+    </div>
+
+    <h1>skew()</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="skew">
+        This div element is skewed 20 degrees along the X-axis and Y-axis
+    </div>
+    <h1>skew()</h1>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="skew">
+        the second parameter is not specified, it has a zero value
+    </div>
+
+                    <!-- matrix     -->
+    <h1>matrix()</h1>
+    <h3>matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</h3>
+    <div class="simple">
+        This is a simple div
+    </div>
+    <div class="matrix">
+        Matrix Method 01
+    </div>
+    <div class="matrix2">
+        Matrix Method 02
+    </div>
+    <div style="display: flex;justify-content:flex-end;padding: 100px 50px;">
+        <a href="file:///C:/Users/salma/Desktop/Asif/3DTransforms.html" style="font-size: 30px;color: black;font-weight: 700;text-decoration: red;">Next 3DTransforms</a>
+    </div>
+</body>
+</html>

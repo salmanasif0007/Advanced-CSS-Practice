@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+</head>
+<style>
+    .transitions{
+        width: 100px;
+        height: 100px;
+        background: rgb(9, 212, 151);
+        transition: 3s;
+        text-align:center
+        
+    }
+    .transitions:hover{
+        width: 500px;
+    }
+    .transitions2{
+        width: 100px;
+        height: 100px;
+        background: rgb(50, 202, 12);
+        transition: width 2s, height 4s;
+        text-align:center
+        
+    }
+    .transitions2:hover{
+        width: 150px;
+        height: 200px;
+    }
+    .ease{
+        width: 100px;
+        height: 100px;
+        background: rgb(195, 0, 255);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function: ease;
+
+    }
+    .ease:hover{
+        width: 300px;
+    }
+    .linear{
+        width: 100px;
+        height: 100px;
+        background: rgb(62, 9, 133);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function: linear;
+    }
+    .linear:hover{
+        width: 300px;
+    }
+    .ease-in{
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 0, 34);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function: ease-in;
+    }
+    .ease-in:hover{
+        width: 300px;
+    }
+    .ease-out{
+        width: 100px;
+        height: 100px;
+        background: rgba(202, 216, 13, 0.897);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function: ease-out;
+    }
+    .ease-out:hover{
+        width: 300px;
+    }
+    .ease-in-out{
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 0, 140);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function:ease-in-out;
+    }
+    .ease-in-out:hover{
+        width: 300px;
+    }
+    .cubic-bezier{
+        width: 100px;
+        height: 100px;
+        background: rgb(102, 21, 209);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function:cubic-bezier(.21, .51, 1, 3);
+    }
+    .cubic-bezier:hover{
+        width: 800px;
+    }
+    .delay{
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 0, 140);
+        text-align: center;
+        transition: width 2s;
+        transition-timing-function:linear;
+        transition-delay: 1s;
+    }
+    .delay:hover{
+        width: 300px;
+    }
+    .transition-transformation{
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .transition-transformation:focus {
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+    }
+</style>
+<body>
+    <h1 style="text-align: center">Transitions</h1>
+
+    <!-- transition -->
+    <h1>transition only width</h1>
+    <div class="transitions ">
+        transition
+    </div>
+    <h1>transition width and height</h1>
+    <div class="transitions2">
+        transition
+    </div>
+    <!-- Transition Timing Function -->
+    <h1>Transition Timing Function</h1>
+    <h3>ease</h3>
+    <div class="ease">slow start, then fast, then end slowly</div>
+    <h3>linear</h3>
+    <div class="linear">the same speed from start to end</div>
+    <h3>ease-in</h3>
+    <div class="ease-in">a slow start</div>
+    <h3>ease-out</h3>
+    <div class="ease-out">a slow end</div>
+    <h3>ease-in-out </h3>
+    <div class="ease-in-out ">a slow start and end</div>
+    <h3>cubic-bezier </h3>
+    <div class="cubic-bezier ">a slow start and end</div>
+    <!-- Delay -->
+    <h1>Delay</h1>
+    <div class="delay ">a 1 second delay before starting</div>
+    <h1>Transition + Transformation</h1>
+    <button class="transition-transformation">A</button>
+    <button class="transition-transformation">B</button>
+    <button class="transition-transformation">C</button>
+    <button class="transition-transformation">D</button>
+    
+</body>
+</html>
