@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+</head>
+<style>
+    .tooltips{
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    .tooltips .tooltipstxt{
+        visibility: hidden;
+        background-color: rgb(181, 28, 201);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+    }
+    .tooltips:hover .tooltipstxt{
+        visibility:visible;
+    }
+    .tooltips2{
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    .tooltips2 .tooltipstxt{
+        visibility: hidden;
+        background-color: rgb(181, 28, 201);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+    .tooltips2:hover .tooltipstxt{
+        visibility:visible;
+    }
+</style>
+<body>
+    <h1 style="text-align: center">Tooltips</h1>
+    <div class="tooltips">Hover me
+        <span class="tooltipstxt"> Hello </span>
+    </div>
+
+    <div class="tooltips2">Bottom
+        <span class="tooltipstxt"> Hello </span>
+    </div>
+</body>
+</html>

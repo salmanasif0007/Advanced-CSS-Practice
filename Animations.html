@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .animations1{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 255, 191);
+        animation-name: animation1;
+        animation-duration: 4s;
+    }
+    @keyframes animation1 {
+    from {background-color: rgb(0, 255, 85);}
+    to {background-color: rgb(140, 0, 255);}
+    }
+    .animations2{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 221);
+        animation-name: animation2;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+    }
+    @keyframes animation2 {
+        0%   {background-color: rgb(150, 14, 14);}
+        25%  {background-color: rgb(153, 21, 185);}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+    }
+    .animations3{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(0, 132, 255);
+        animation-name: animation3;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+    }
+    @keyframes animation3 {
+        0%   {background-color:rgb(49, 162, 255); left:0px; top:0px;}
+        25%  {background-color:rgb(0, 132, 255); left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    .animations4{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(255, 174, 0);
+        animation-name: animation4;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-delay: 2s;  
+
+    }
+    @keyframes animation4 {
+        0%   {background-color:rgb(224, 255, 49); left:0px; top:0px;}
+        25%  {background-color:rgb(255, 0, 0); left:200px; top:0px;}
+        50%  {background-color:rgb(23, 23, 151); left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:rgb(190, 115, 16); left:0px; top:0px;}
+    }
+    .animations5{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(255, 174, 0);
+        animation-name: animation5;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-delay: -2s; 
+
+    }
+    @keyframes animation5 {
+        0%   {background-color:rgb(49, 162, 255); left:0px; top:0px;}
+        25%  {background-color:rgb(0, 132, 255); left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+    .animations6{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(0, 255, 0);
+        animation-name: animation6;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+
+    }
+    @keyframes animation6{
+        0%   {background-color:rgb(0, 255, 255); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(10, 29, 10); left:0px; top:200px;}
+        100% {background-color:rgb(136, 0, 0); left:0px; top:0px;}
+        }
+    .animations7{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: rgb(0, 255, 0);
+            animation-name: animation7;
+            animation-duration: 4s;
+            margin-bottom: 20px;
+            animation-duration: 4s;
+            animation-direction: reverse;  
+
+    }
+    @keyframes animation7{
+        0%   {background-color:rgb(0, 255, 255); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(10, 29, 10); left:0px; top:200px;}
+        100% {background-color:rgb(44, 16, 16); left:0px; top:0px;}
+        }
+    .animations7{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(0, 255, 0);
+        animation-name: animation7;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-duration: 4s;
+        animation-direction: reverse;  
+    }
+    @keyframes animation7{
+        0%   {background-color:rgb(0, 255, 255); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(10, 29, 10); left:0px; top:200px;}
+        100% {background-color:rgb(44, 16, 16); left:0px; top:0px;}
+    }
+    .animations8{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(0, 255, 0);
+        animation-name: animation8;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-duration: 4s;
+        animation-direction: alternate;   
+        animation-iteration-count: 2;
+    }
+    @keyframes animation8{
+        0%   {background-color:rgb(0, 255, 255); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(10, 29, 10); left:0px; top:200px;}
+        100% {background-color:rgb(44, 16, 16); left:0px; top:0px;}
+    }
+    .animations9{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: rgb(0, 255, 0);
+        animation-name: animation9;
+        animation-duration: 4s;
+        margin-bottom: 20px;
+        animation-duration: 4s;
+        animation-direction:alternate-reverse;  
+        animation-iteration-count: 2;
+    }
+    @keyframes animation9{
+        0%   {background-color:rgb(0, 255, 255); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(10, 29, 10); left:0px; top:200px;}
+        100% {background-color:rgb(44, 16, 16); left:0px; top:0px;}
+    }
+    .animations10{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: animations10;
+        animation-duration: 3s;  
+        animation-fill-mode: forwards;
+    }
+    @keyframes animations10 {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+    }
+    .animations11{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: animations10;
+        animation-duration: 3s;  
+        animation-fill-mode: backwards;
+    }
+    @keyframes animations10 {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+    }
+    .animations12{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: animations10;
+        animation-duration: 3s;  
+        animation-fill-mode: both;
+    }
+    @keyframes animations10 {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+    }
+    .animations12{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name:animations12;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+@keyframes animations12{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+<body>
+    <h1 style="text-align: center">Animations</h1>
+    <!-- @keyframes example -->
+    <h1>Color Change</h1>
+    <div class="animations1"></div>
+    <!-- dDration -->
+    <h1 >Duration</h1>
+    <div class="animations2"></div>
+    <h1 >Position</h1>
+    <div class="animations3"></div>
+    <!-- Delay  -->
+    <h1 >Delay</h1>
+    <div class="animations4"></div>
+    <h1 >Delay with (-)</h1>
+    <div class="animations5"></div>
+    <h1 >Iteration-Count</h1>
+    <div class="animations6"></div>
+    <h1 >Direction Reverse</h1>
+    <div class="animations7"></div>
+    <h1 >Direction alternate</h1>
+    <div class="animations8"></div>
+    <h1 >Direction alternate-reverse</h1>
+    <div class="animations9"></div>
+    <h1 >fill-mode forwards</h1>
+    <div class="animations10"></div>
+    <h1 >fill-mode backwards</h1>
+    <div class="animations11"></div>
+    <h1 >fill-mode both</h1>
+    <div class="animations12"></div>
+    <h1 >Full practice</h1>
+    <div class="animations13"></div>
+    <div style="display: flex;justify-content:space-between;padding: 100px 50px;">
+        <a href="/home/asif/Desktop/Advanced-CSS-Practice/Transitions.html" style="font-size: 30px;color: black;font-weight: 700;text-decoration: red;">Previous Transitions</a>
+        <a href="/home/asif/Desktop/Advanced-CSS-Practice/Tooltips.html" style="font-size: 30px;color: black;font-weight: 700;text-decoration: red;">Next Tooltips</a>
+    </div>
+</body>
+</html>

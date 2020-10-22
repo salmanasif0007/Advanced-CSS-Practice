@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Nav</title>
+</head>
+<style>
+    .line1{
+        height: 10px;
+        width: 200px;
+        background-color: red;
+        margin: 10px;
+        transition-timing-function: linear;
+    }
+    .line2{
+      visibility:visible;
+        height: 10px;
+        width: 200px;
+        background-color: red;
+        margin: 10px;
+        transition-timing-function: linear;
+    }
+    .line3{
+        height: 10px;
+        width: 200px;
+        background-color: red;
+        margin: 10px;
+        transition-timing-function: linear;
+    }
+
+    d1:hover .line2{
+      visibility: hidden;
+    }
+    /* #d2:target {
+        display: none;
+    }
+    :root {
+  --toggler-size: 40px;
+}
+
+.input-toggler {
+  display: none;
+}
+
+.menu-toggler {
+  display: block;
+  width: var(--toggler-size);
+  height: var(--toggler-size);
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.menu-toggler__line {
+  height: calc(var(--toggler-size) / 5);
+  background: Tomato;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition-property: transform, opacity;
+  transition-duration: .5s, .25s;
+  transition-delay: 0s, .5s;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line {
+  transition-delay: .25s, 0s;
+}
+
+
+.menu-toggler__line:nth-child(2) {
+  top: calc(var(--toggler-size) / 5 * 2);
+}
+
+.menu-toggler__line:nth-child(3) {
+  top: calc(var(--toggler-size) / 5 * 4);
+}
+
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(1) {
+  transform: translateY(calc(var(--toggler-size) / 5 * 2)) rotate(45deg);
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(2) {
+  opacity: 0;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(3) {
+  transform: translateY(calc(var(--toggler-size) / 5 * -2)) rotate(-45deg);
+} */
+
+
+</style>
+<body>
+
+  <div id="d1">  
+    <div  class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+
+
+
+
+  <!-- <input type="checkbox" id="menuToggler" class="input-toggler" />
+  <label for="menuToggler" class="menu-toggler">
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+    <span class="menu-toggler__line"></span>
+  </label> -->
+
+</body>
+</html>

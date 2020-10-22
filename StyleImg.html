@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .imgCenter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    .polaroid{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+    }
+    .overlaycontainer{
+        position: relative;
+        width: 20%;
+    }
+    .overlay1{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+    .overlaycontainer:hover .overlay1{
+        opacity: 1;
+    }
+    .overlay2{
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 0%;
+        width: 100%;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+    .overlaycontainer:hover .overlay2{
+        height: 100%;
+    }
+    .overlay3{
+        position: absolute;
+        /* top: 0; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0%;
+        width: 100%;
+        transition: .5s ease;
+        background-color: #008CBA;
+        overflow: hidden;
+    }
+    .overlaycontainer:hover .overlay3{
+        height: 100%;
+    }
+    .overlay4{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+    .overlaycontainer:hover .overlay4{
+        width: 100%;
+    }
+    .overlay5{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+    .overlaycontainer:hover .overlay5{
+        width: 100%;
+    }
+    .overlaytxt{
+        display: flex;
+        justify-content: center;
+    }
+
+* {
+    box-sizing: border-box; 
+}
+
+.gallery {
+    border: 1px solid #ccc;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallerytxt {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.box {
+    padding: 0 6px;
+    float: left;
+    width: 24%;
+}
+
+@media only screen and (max-width: 700px) {
+.box {
+    width: 49%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.box {
+    width: 100%;
+}
+}
+
+</style>
+<body>
+    <h1 style="text-align: center">Style Image</h1>
+    <h1>Rounded Images</h1>
+    <img style="border-radius: 50%;" height="300px" width="300px" src="https://www.w3schools.com/css/paris.jpg" alt="">
+    <h1>Responsive Image</h1>
+    <img style="width:100%;height: auto;" src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="">
+    <h1>Center Image</h1>
+    <img src="https://www.w3schools.com/css/pineapple.jpg" alt="" class="imgCenter">
+    <h1>Polaroid</h1>
+    <div class="polaroid">
+        <img src="https://www.w3schools.com/css/lights600x400.jpg" alt="Norther Lights" style="width:100%">
+        <div class="container">
+        <p>Northern Lights</p>
+        </div>
+    </div>
+    <h1>Opacity</h1>
+    <img height="auto" width="100%" style="opacity: .7;" src="https://www.w3schools.com/css/img_forest.jpg" alt="">
+    <h1>Image Hover overlay</h1>
+    <div>
+        <h3>Fade</h3>
+        <div class="overlaycontainer">
+            <img style="display: block;height: auto;width: 100%;" src="https://lh3.googleusercontent.com/ogw/ADGmqu-TCFGODxPLXnKP9N_dxpUGOcWuC8fGTDc-TrNhu94=s83-c-mo"  alt="">
+            <div class="overlay1">
+                <h1 class="overlaytxt" >Salman Asif</h1>
+            </div>
+        </div>
+        <h3>Top</h3>
+        <div class="overlaycontainer">
+            <img style="display: block;height: auto;width: 100%;" src="https://lh3.googleusercontent.com/ogw/ADGmqu-TCFGODxPLXnKP9N_dxpUGOcWuC8fGTDc-TrNhu94=s83-c-mo"  alt="">
+            <div class="overlay2">
+                <h1 class="overlaytxt" >Salman Asif</h1>
+            </div>
+        </div>
+        <h3>Bottom</h3>
+        <div class="overlaycontainer">
+            <img style="display: block;height: auto;width: 100%;" src="https://lh3.googleusercontent.com/ogw/ADGmqu-TCFGODxPLXnKP9N_dxpUGOcWuC8fGTDc-TrNhu94=s83-c-mo"  alt="">
+            <div class="overlay3">
+                <h1 class="overlaytxt" >Salman Asif</h1>
+            </div>
+        </div>
+        <h3>Right</h3>
+        <div class="overlaycontainer">
+            <img style="display: block;height: auto;width: 100%;" src="https://lh3.googleusercontent.com/ogw/ADGmqu-TCFGODxPLXnKP9N_dxpUGOcWuC8fGTDc-TrNhu94=s83-c-mo"  alt="">
+            <div class="overlay4">
+                <h1 class="overlaytxt" >Salman Asif</h1>
+            </div>
+        </div>
+        <h3>Left</h3>
+        <div class="overlaycontainer">
+            <img style="display: block;height: auto;width: 100%;" src="https://lh3.googleusercontent.com/ogw/ADGmqu-TCFGODxPLXnKP9N_dxpUGOcWuC8fGTDc-TrNhu94=s83-c-mo"  alt="">
+            <div class="overlay5">
+                <h1 class="overlaytxt" >Salman Asif</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 style="text-align: center;">Gallery</h1>
+        <div class="box">
+            <div class="gallery">
+            <a target="_blank" href="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="Northern Lights" >
+            </a>
+            <div class="gallerytxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="gallery">
+            <a target="_blank" href="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg">
+                <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg" alt="Northern Lights" >
+            </a>
+            <div class="gallerytxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="gallery">
+            <a target="_blank" href="">
+                <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg" alt="Northern Lights" >
+            </a>
+            <div class="gallerytxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="gallery">
+            <a target="_blank" href="https://cdn.pixabay.com/photo/2015/06/25/14/13/fern-821293_960_720.jpg">
+                <img src="https://cdn.pixabay.com/photo/2015/06/25/14/13/fern-821293_960_720.jpg" alt="Northern Lights" >
+            </a>
+            <div class="gallerytxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </div>
+    <h1>The object-fit Property</h1>
+    <h3>fill</h3>
+    <img style="object-fit: fill;background-color: grey;" height="300px" width="250px" src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg" alt="">
+    <h3>contain</h3>
+    <img style="object-fit: contain;background-color: grey" height="300px" width="250px" src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg" alt="">
+    <h3>cover</h3>
+    <img style="object-fit: cover;background-color: grey;" height="300px" width="250px" src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg" alt="">
+    <h3>scale-down</h3>
+    <img style="object-fit: scale-down;background-color: grey" height="300px" width="250px" src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg" alt="">
+    <h3>none</h3>
+    <img style="object-fit: none;background-color: grey;" height="300px" width="250px" src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?cs=srgb&dl=pexels-thorsten-technoman-338515.jpg&fm=jpg" alt="">
+
+</body>
+</html>
